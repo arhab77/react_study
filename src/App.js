@@ -1,9 +1,9 @@
-import Komponen from "./komponen/tugas";
+import Styling from "./Tugas/Styling";
 
 function App() {
   return (
     <div className="App">
-      <Komponen/>
+      <Styling />
     </div>
   );
 }
