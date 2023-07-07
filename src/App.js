@@ -1,9 +1,9 @@
-import TugasForm from "./Tugas/Form";
+import Lifesycle from "./Tugas/Lifesycle";
 
 function App() {
   return (
     <div className="App">
-      <TugasForm/>
+      <Lifesycle/>
     </div>
   );
 }
