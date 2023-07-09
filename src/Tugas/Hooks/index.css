@@ -1,0 +1,21 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.card-footer {
+   text-align: center;
+}
+
+.description {
+    max-height: 4.5em; /* Sesuaikan tinggi yang diinginkan */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.title{
+    max-height: 2.5em; /* Sesuaikan tinggi yang diinginkan */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
