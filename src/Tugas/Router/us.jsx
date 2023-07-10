@@ -1,24 +1,18 @@
-import { useEffect, useState } from "react"
-import { Button, Card, Col, Container, Form, Navbar, Row } from "react-bootstrap";
-import "./index.css";
+import { useEffect, useState } from "react";
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 
-const TugasHooks = () => {
+const Us = () => {
     let[articles,setArticles] = useState([]);
     let[input, setInput] = useState('');
 
     useEffect(() => {
-        fetch(`https://newsapi.org/v2/top-headlines?q=${input}&country=in&apiKey=1cdc9aff451b4733aef1cebbf5fcfc7b`)
+        fetch(`https://newsapi.org/v2/top-headlines?q=${input}&country=us&apiKey=1cdc9aff451b4733aef1cebbf5fcfc7b`)
         .then(res => res.json())
         .then(res => setArticles(res.articles))
     },[input]);
 
     return(
         <div>
-            <Navbar style={{backgroundColor: "#1F8A70"}}>
-                <Container>
-                    <Navbar.Brand href="#home" className="text-light"><b>React News</b></Navbar.Brand>
-                </Container>
-            </Navbar>
             <br/>
             <Container>
                 <Form.Control
@@ -59,4 +53,4 @@ const TugasHooks = () => {
     )
 }
 
-export default TugasHooks;
+export default Us;

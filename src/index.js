@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import About from './Materi/Router/about';
-import Home from './Materi/Router/home';
-import Category from './Materi/Router/category';
+import Us from './Tugas/Router/us';
+import Id from './Tugas/Router/id';
+import In from './Tugas/Router/in';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,9 +14,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<App />}>
-          <Route path='home' element={<Home/>}/>
-          <Route path='about' element={<About/>}/>
-          <Route path='category/:name' element={<Category/>}/>
+          <Route path='us' element={<Us/>}/>
+          <Route path='id' element={<Id/>}/>
+          <Route path='in' element={<In/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

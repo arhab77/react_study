@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react"
-import { Button, Card, Col, Container, Form, Navbar, Row } from "react-bootstrap";
-import "./index.css";
+import { useEffect, useState } from "react";
+import { Button, Card, Col, Container, Form, Row } from "react-bootstrap";
 
-const TugasHooks = () => {
+const In = () => {
     let[articles,setArticles] = useState([]);
     let[input, setInput] = useState('');
 
@@ -14,11 +13,6 @@ const TugasHooks = () => {
 
     return(
         <div>
-            <Navbar style={{backgroundColor: "#1F8A70"}}>
-                <Container>
-                    <Navbar.Brand href="#home" className="text-light"><b>React News</b></Navbar.Brand>
-                </Container>
-            </Navbar>
             <br/>
             <Container>
                 <Form.Control
@@ -59,4 +53,4 @@ const TugasHooks = () => {
     )
 }
 
-export default TugasHooks;
+export default In;
