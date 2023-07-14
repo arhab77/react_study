@@ -1,11 +1,9 @@
-// import { Link, Outlet } from "react-router-dom";
-// import TugasHooks from "./Tugas/Hooks";
-import TugasRouter from "./Tugas/Router";
+import Redux from "./Materi/Redux";
 
 function App() {
   return (
     <div className="App">
-      <TugasRouter/>
+      <Redux/>
     </div>
   );
 }
